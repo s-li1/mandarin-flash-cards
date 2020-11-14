@@ -1,0 +1,124 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "english": "to be",
+            "hanzi": "是",
+            "pinyin": "shì"
+        },
+        {
+            "id": 2,
+            "english": "not",
+            "hanzi": "不",
+            "pinyin": "bù"
+        },
+        {
+            "id": 3,
+            "english": "person",
+            "hanzi": "人",
+            "pinyin": "rén"
+        },
+        {
+            "id": 4,
+            "english": "we",
+            "hanzi": "我们",
+            "pinyin": "wǒmen"
+        },
+        {
+            "id": 5,
+            "english": "at",
+            "hanzi": "在",
+            "pinyin": "zài"
+        },
+        {
+            "id": 6,
+            "english": "country",
+            "hanzi": "国",
+            "pinyin": "guó"
+        },
+        {
+            "id": 7,
+            "english": "middle",
+            "hanzi": "中",
+            "pinyin": "zhōng"
+        },
+        {
+            "id": 8,
+            "english": "have",
+            "hanzi": "有",
+            "pinyin": "yǒu"
+        },
+        {
+            "id": 9,
+            "english": "that",
+            "hanzi": "那",
+            "pinyin": "nà"
+        },
+        {
+            "id": 10,
+            "english": "to go",
+            "hanzi": "去",
+            "pinyin": "qù"
+        },
+        {
+            "id": 11,
+            "english": "to study, to learn",
+            "hanzi": "学",
+            "pinyin": "xué"
+        },
+        {
+            "id": 12,
+            "english": "to use",
+            "hanzi": "用",
+            "pinyin": "yòng"
+        },
+        {
+            "id": 13,
+            "english": "face, surface",
+            "hanzi": "面",
+            "pinyin": "miàn"
+        },
+        {
+            "id": 14,
+            "english": "work",
+            "hanzi": "工",
+            "pinyin": "gōng"
+        },
+        {
+            "id": 15,
+            "english": "speech",
+            "hanzi": "话",
+            "pinyin": "huà"
+        },
+        {
+            "id": 16,
+            "english": "very, quite",
+            "hanzi": "很",
+            "pinyin": "hěn"
+        },
+        {
+            "id": 17,
+            "english": "good",
+            "hanzi": "好",
+            "pinyin": "hǎo"
+        },
+        {
+            "id": 18,
+            "english": "bright, clear",
+            "hanzi": "明",
+            "pinyin": "míng"
+        },
+        {
+            "id": 19,
+            "english": "year",
+            "hanzi": "年",
+            "pinyin": "nián"
+        },
+        {
+            "id": 20,
+            "english": "king",
+            "hanzi": "王",
+            "pinyin": "wáng"
+        }
+    ]
+}
