@@ -1,5 +1,5 @@
 # Mandarin Flash Cards
-Learn Chinese with this flashcard memorization app! Built using React with a Firebase database.
+Learn Chinese with this flashcard memorization app. Built using React with a Firebase database.
 
 # misc
 
