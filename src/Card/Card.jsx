@@ -3,6 +3,9 @@ import './Card.css';
 
 const Card = (props) => (
     <div className="card-container">
+        <div className="head">
+            <h1>Learning the Hanzi </h1>
+        </div>
         <div className="card">
             <div className="front">
                 <div className="english">{props.english}</div>

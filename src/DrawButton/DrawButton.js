@@ -1,4 +1,5 @@
 import React from 'react';
+import './DrawButton.css';
 
 export default function DrawButton(props) {
     function drawCard() {

@@ -1,0 +1,20 @@
+.btn {
+    border-radius: 12px;
+    width: 300px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    top:-75px;
+    background-color:#ee5253;
+    color: white;
+}
+button {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
