@@ -1,18 +1,27 @@
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .btn {
     border-radius: 12px;
     width: 300px;
     height: 60px;
+    position: absolute;
+    bottom: 65px;
     border: none;
     cursor: pointer;
     outline: none;
-    position: relative;
-    top:-75px;
     background-color:#ee5253;
     color: white;
 }
 button {
     font-size: 20px;
     text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
 }
 
 .btn:hover {

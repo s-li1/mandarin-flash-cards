@@ -1,4 +1,28 @@
-.App {
-  text-align: center;
+.container {
+  cursor: pointer;
+  min-height: 80vh;
+  width: 400px;
+  perspective: 800px;
+  position: relative;
+  bottom: -50px;
+  margin: auto;
+  transition: ease-in;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 40px;
+  color: white;
+  background-color: #ecf0f1;
+}
+
+.back-btn {
+  display: relative;
+  padding-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.back-icon {
+  width: 55px;
+  height: 80px;
 }
 

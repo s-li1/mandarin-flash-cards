@@ -1,18 +1,24 @@
 import React from 'react';
+import '../App.css';
 import './Card.css';
+import { HiOutlineArrowNarrowLeft as ArrowLeft} from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
-const Card = (props) => (
-    <div className="card-container">
+const Card = ({english, hanzi, pinyin}) => (
+    <div>
         <div className="head">
-            <h1>Learning the Hanzi </h1>
+            <Link to="/menu" className="back-btn">
+                <ArrowLeft className='back-icon'/>
+            </Link>
+            <h1>Learning the Hanzi</h1>
         </div>
         <div className="card">
             <div className="front">
-                <div className="english">{props.english}</div>
+                <div className="english">{english}</div>
             </div>
             <div className="back">
-                <div className="hanzi">{props.hanzi}</div>
-                <div className="pinyin">{props.pinyin}</div>
+                <div className="hanzi">{hanzi}</div>
+                <div className="pinyin">{pinyin}</div>
             </div>
         </div>
     </div>
