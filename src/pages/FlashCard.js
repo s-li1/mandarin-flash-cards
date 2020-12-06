@@ -14,12 +14,13 @@ function FlashCard(props) {
   //   firebase.initializeApp(DB_CONFIG);
   // }
   // let database = firebase.database().ref().child('cards');
-
   let json = require(`../Data/${props.level}.json`);
-  const coolcards = json.map(element=> {
+
+  let database = json.map(element=> {
     return element;
   });
-  let database = coolcards;
+
+  const [cardNumber, setCardNumber] = useState(0);
   const [cards, setCard] = useState([]);
   const [currentCard, setCurrentCard] = useState({});
 
@@ -31,7 +32,7 @@ function FlashCard(props) {
 
   function updateCard() {
     const currentCards = cards;
-   
+    setCardNumber(cardNumber + 1);
     setCurrentCard(getRandomCard(currentCards));
   }
   
@@ -46,13 +47,14 @@ function FlashCard(props) {
     //     hanzi: snap.val().hanzi,
     //     pinyin: snap.val().pinyin
     //   });
-    database.map((snap)=> {
-      return snap.english = snap.english.toString().replace(/,/g, ', ');
-    });
+    // database.map((snap)=> {
+    //   return snap.english = snap.english.toString().replace(/,/g, ', ');
+    // });
+
     database.forEach(snap=> {
       currentCards.push({
         id: snap.key,
-        english: snap.english,
+        english: snap.english[0],
         hanzi: snap.hanzi,
         pinyin: snap.pinyin
       });
@@ -73,6 +75,9 @@ function FlashCard(props) {
               hanzi={currentCard.hanzi}
               pinyin={currentCard.pinyin}
         />
+      </div>
+      <div className="progressBar">
+        <p className="cardNumber">{cardNumber} / {database.length}</p>
       </div>
       <div className="buttonRow">
         {/* Binding drawCard attribute to updateCard function */}

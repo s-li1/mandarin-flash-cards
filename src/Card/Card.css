@@ -1,5 +1,5 @@
 .card {
-    height: 400px;
+    height: 25rem;
     width: 300px;
     display: inline-block;
     position: absolute;
@@ -9,7 +9,7 @@
     top: 150px;
     transform-style: preserve-3d;
     transition: all 0.4s ease-in-out;
-
+    
   }
 
   .head {
@@ -27,7 +27,7 @@
   }
   
   .card .front {
-    min-height: 400px;
+    height: 25rem;
     width: 300px;
     backface-visibility: hidden;
     position: absolute;
@@ -38,7 +38,7 @@
   }
   
   .card .back {
-    height: 400px;
+    height: 25rem;
     width: 300px;
     text-align: center;
     transform: rotateY(180deg);
@@ -48,7 +48,7 @@
   
   .english{
     color: #333;
-    font-size: 2.3em;
+    font-size: 2.3rem;
     padding-top: 55%;
   }
   
@@ -63,3 +63,5 @@
       font-size: 2.3em;
       padding-top: 10%;
   }
+
+ 
