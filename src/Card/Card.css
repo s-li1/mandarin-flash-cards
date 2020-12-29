@@ -9,6 +9,9 @@
     top: 150px;
     transform-style: preserve-3d;
     transition: all 0.4s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
     
   }
 
@@ -20,30 +23,40 @@
     line-height: 120px;
     display: flex;
   }
-  
-  .card:hover {
-    transform: rotateY(180deg);
-    transition: all 0.4s ease-in-out;
-  }
+
   
   .card .front {
     height: 25rem;
     width: 300px;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
     position: absolute;
     overflow: hidden;
     text-align: center;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 15px;
+    
+  }
+
+  .isFlipped {
+    transform: rotateY(180deg);
+    transition: all 0.4s ease-in-out;
+
   }
   
   .card .back {
+    transform: rotateY(180deg);
     height: 25rem;
     width: 300px;
     text-align: center;
-    transform: rotateY(180deg);
     background-color: rgba(255, 255, 255, 1);
     border-radius: 15px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
   }
   
   .english{

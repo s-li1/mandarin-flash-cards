@@ -3,10 +3,11 @@ import '../App.css';
 import './Card.css';
 import Header from '../Header';
 
-const Card = ({english, hanzi, pinyin}) => (
+const Card = ({english, hanzi, pinyin, showCard}) => (
     <div>
         <Header/>
-        <div className="card">
+        {console.log(showCard)}
+        <div className={showCard ? "card" : "card isFlipped"}>
             <div className="front">
                 <div className="english">{english}</div>
             </div>

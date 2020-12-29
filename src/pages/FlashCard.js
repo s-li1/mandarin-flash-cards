@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../Card/Card';
-import DrawButton from '../Button/Button';
+import Button from '../Button/Button';
 import './FlashCard.css';
 // import firebase from 'firebase/app';
 // import 'firebase/database';
@@ -23,7 +23,7 @@ function FlashCard(props) {
   const [cardNumber, setCardNumber] = useState(0);
   const [cards, setCard] = useState([]);
   const [currentCard, setCurrentCard] = useState({});
-
+  const [isShown, setIsShown] = useState(false);
   function getRandomCard(currentCards) {
     let card = currentCards[Math.floor(Math.random() * currentCards.length)];
     return (card);
@@ -33,9 +33,13 @@ function FlashCard(props) {
   function updateCard() {
     const currentCards = cards;
     setCardNumber(cardNumber + 1);
+    if(cardNumber === currentCard.length) {
+      setCardNumber(0);
+    }
     setCurrentCard(getRandomCard(currentCards));
   }
-  
+
+
 
   useEffect(()=> {
     const currentCards = cards;
@@ -71,7 +75,7 @@ function FlashCard(props) {
   return (
     <div className="flashcard container" style={{textAlign: "center"}}>
       <div className="cardRow">
-        <Card english={currentCard.english} 
+        <Card showCard= {isShown} english={currentCard.english} 
               hanzi={currentCard.hanzi}
               pinyin={currentCard.pinyin}
         />
@@ -81,7 +85,8 @@ function FlashCard(props) {
       </div>
       <div className="buttonRow">
         {/* Binding drawCard attribute to updateCard function */}
-        <DrawButton handleClick={updateCard} label="Draw Card"/>
+        <Button handleClick={updateCard} label="Draw Card"/>
+        <Button handleClick={()=>setIsShown(!isShown)} label="Flip Card"/>
       </div>
     </div>
   );
