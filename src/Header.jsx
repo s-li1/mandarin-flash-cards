@@ -1,6 +1,7 @@
 import React from 'react'
 import { HiOutlineArrowNarrowLeft as ArrowLeft} from 'react-icons/hi';
 import { Link } from 'react-router-dom';
+import './App.css';
 export default function Header() {
     return (
         <div className="head">

@@ -9,3 +9,11 @@
 .buttonRow {
     height: 200px;
 }
+
+.head {
+    background-color:#ee5253;
+    height: 200px;
+    margin: auto;
+    line-height: 120px;
+    display: flex;
+}

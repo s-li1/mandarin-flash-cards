@@ -7,14 +7,14 @@ import './FlashCard.css';
 // import { DB_CONFIG } from './Config/Firebase/db_config';
 //import card from '../Data/hsk1.json';
 
-function FlashCard(props) {
+function FlashCard({level}) {
 
   // Initialize Firebase, check if it hasn't already been
   // if (firebase.apps.length === 0) {
   //   firebase.initializeApp(DB_CONFIG);
   // }
   // let database = firebase.database().ref().child('cards');
-  let json = require(`../Data/${props.level}.json`);
+  let json = require(`../Data/${level}.json`);
 
   let database = json.map(element=> {
     return element;
@@ -81,7 +81,7 @@ function FlashCard(props) {
         />
       </div>
       <div className="progressBar">
-        <p className="cardNumber">{cardNumber} / {database.length}</p>
+        <p className="cardNumber">{cardNumber + 1} / {database.length}</p>
       </div>
       <div className="buttonRow">
         {/* Binding drawCard attribute to updateCard function */}
