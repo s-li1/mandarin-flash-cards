@@ -2,7 +2,7 @@
 Learn Chinese Mandarin with this flashcard memorization app. Built using React with a Firebase database.
 
 ![Flash Card Demo]
-(https://github.com/s-li1/mandarin-flash-cards/main/demo.gif)
+https://github.com/s-li1/mandarin-flash-cards/blob/main/src/demo.gif
 
 # misc
 
